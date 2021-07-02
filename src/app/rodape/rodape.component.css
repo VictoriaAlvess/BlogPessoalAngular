@@ -5,6 +5,7 @@
 .ul.social-social-network{
     list-style: none;
     padding: 0;
+    display: inline;
 }
 
 .ul.social-network li{
