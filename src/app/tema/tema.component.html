@@ -2,12 +2,13 @@
     <div class="row bgnav">
         <div class="col-md-12 text-white">
 
+            <hr>
             <a routerLink='/inicio' class="text-white text-left"> 
-                <i class="fa fa-home"> Início</i>
+                <i class="fa fa-home"> INÍCIO </i>
             </a>
             
-            <h1 class="fs-54 text-center">Temas</h1>
-            <h5 class="fs-18 text-center">Veja aqui todos os temas cadastrados, ou cadastre um novo:</h5>
+            <h1 class="fs-54 text-center ff">Temas</h1>
+            <h5 class="fs-18 text-center ff">Veja aqui todos os temas cadastrados, ou cadastre um novo:</h5>
 
             <div class="row d-flex justify-content-center mt-4 mb-5">
                 <div class="col-md-3">
@@ -30,7 +31,7 @@
 <div class="container">
     <div class="row mt-5">
         <div class="col-md-12">
-            <h2 class="text-center">Todos os temas</h2>
+            <h2 class="text-center ff">Todos os temas</h2>
         </div>
     </div>
 
@@ -42,16 +43,18 @@
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Descrição</th>
-                    <th scope="col" class="text-end">Modificações</th>
+                    <th scope="col" class="text-end ff">Modificações</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr *ngFor='let tema of listaTemas'>
                     <th> {{tema.id}}</th>
                     <td> {{tema.descricao}}</td>
+
                     <td class="d-flex justify-content-end">
-                      <button class="btn btn-info text-white me-3">Editar</button>
-                      <button class="btn btn-danger">Apagar</button>
+                      <button class="btn btn-info text-white me-3 ff" [routerLink]="['/tema-edit',tema.id]">Editar</button>
+
+                      <button class="btn btn-danger ff" [routerLink]="['/tema-delete',tema.id]">Apagar</button>
                     </td>
                   </tr>
                 </tbody>
