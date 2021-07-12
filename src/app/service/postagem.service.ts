@@ -19,24 +19,24 @@ export class PostagemService {
   }
 
   getAllPostagens(): Observable<Postagem[]>{
-    return this.http.get<Postagem[]>('http://blogvictoriaaalves.herokuapp.com/postagens', this.token)
+    return this.http.get<Postagem[]>('https://blogvictoriaaalves.herokuapp.com/postagens', this.token)
   }
 
   getByIdPostagem(id: number): Observable<Postagem>{
-    return this.http.get<Postagem>(`http://blogvictoriaaalves.herokuapp.com/postagens/${id}`,this.token)
+    return this.http.get<Postagem>(`https://blogvictoriaaalves.herokuapp.com/postagens/${id}`,this.token)
   }
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.post<Postagem>('http://blogvictoriaaalves.herokuapp.com/postagens', postagem, this.token)
+    return this.http.post<Postagem>('https://blogvictoriaaalves.herokuapp.com/postagens', postagem, this.token)
 
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.put<Postagem>('http://blogvictoriaaalves.herokuapp.com/postagens', postagem, this.token)
+    return this.http.put<Postagem>('https://blogvictoriaaalves.herokuapp.com/postagens', postagem, this.token)
   }
 
   deletePostagem(id: number){
-    return this.http.delete(`http://blogvictoriaaalves.herokuapp.com/postagens/${id}`,this.token)
+    return this.http.delete(`https://blogvictoriaaalves.herokuapp.com/postagens/${id}`,this.token)
   }
 
 

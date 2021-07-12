@@ -11,11 +11,11 @@
                         height="50px" class="img-fluid rounded-circle" />
                 </li>
                 <li class="nav-item ps-3 fs-16">
-                    <p class="m-0 fw-bold text-white"> Olá,{{nome}}</p>
+                    <p class="m-0 fw-bold text-white"> Olá,      {{nome}}</p>
                 </li>
 
                 <li class="nav-item ps-3">
-                    <a href="">
+                    <a [routerLink]="['/user-edit',id]">
                         <p class="fs-16 text-white m-0">
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                         </p>
