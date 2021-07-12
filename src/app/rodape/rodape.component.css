@@ -15,7 +15,7 @@
 
 .fa{
     font-size: 35pt;
-    color: white;
+    color: black;
     padding: 10px;
 }
 
@@ -31,6 +31,3 @@
     color: #0072b1;
 }
 
-.bgfooter{
-    background-color:slateblue
-}
