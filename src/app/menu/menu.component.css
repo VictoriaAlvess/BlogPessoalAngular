@@ -1,0 +1,12 @@
+.bgnav{
+    background-color: rebeccapurple;
+}
+
+.fs-16{
+    font-size: 16pt;
+    padding: 5px;
+}
+
+a{
+    cursor: pointer;
+}
